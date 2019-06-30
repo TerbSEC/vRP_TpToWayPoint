@@ -12,8 +12,8 @@ local groups = {"superadmin", "admin"};
 
 RegisterServerEvent('vRP-TpToWaypoint:AdminCheck')
 AddEventHandler('vRP-TpToWaypoint:AdminCheck', function()
+    local source = source    
     local user_id = vRP.getUserId({source})
-    local player = vRP.getUserSource({user_id})
 
     local found = false;
     for k,v in ipairs(groups) do
